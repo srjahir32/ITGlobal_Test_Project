@@ -1,0 +1,121 @@
+<div>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>User Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let o of lstUser" (click)="showDetail(o)">
+        <td>{{o.name}}</td>
+        <td>{{o.username}}</td>
+        <td>{{o.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br />
+  <br />
+  <div>
+    <div class="row">
+      <div class="column">
+        Name
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        User Name
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.username">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        Email
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        Street
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.street">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        Street
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.suite">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        City
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.city">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        Zipcode
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.zipcode">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        Phone
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.phone">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        Website
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.website">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        Company Name
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.companyname">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        Company Catch Phrase
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.catchPhrase">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        Company Catch Bs
+      </div>
+      <div class="column">
+        <input type="text" [(ngModel)]="userDataModel.bs">
+      </div>
+    </div>
+
+  </div>
+
+</div>
